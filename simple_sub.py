@@ -49,8 +49,8 @@ REGEXP_6_REPL = ''
 # aAbZcd ---> aAbZcd
 # AabcdY ---> abcdY
 # BabcdZ ---> Babcd
-REGEXP_7 = '^A.{4}Z$'
-REGEXP_7_REPL = '.{4}'
+REGEXP_7 = '^A|Z$'
+REGEXP_7_REPL = ''
 
 # a b c  ---> a b c
 # a  b c ---> a b c
@@ -62,5 +62,5 @@ REGEXP_8_REPL = ' '
 # a xyz xyz a      ---> a a
 # d xy xyza a      ---> d xy a
 # a xyzzy b        ---> a xyzzy b
-REGEXP_9 = '[a-d]{3,4}\s'
+REGEXP_9 = '[ax][a-z]{2,3}\s'
 REGEXP_9_REPL = ''
